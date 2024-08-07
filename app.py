@@ -6,7 +6,7 @@ import plotly_express as px
 df=pd.read_csv("vehicles_us.csv")
 
 #creacion de boton histograma
-st.header("Analisis de Datos de vehiculos usados en USA")
+st.header("Analisis de Datos de Vehículos Usados en EE.UU.")
 boton_histograma=st.button("Crear Histograma")
 if boton_histograma:
     st.write("Distribución del Kilometraje de Vehículos en Anuncios") #mensaje
