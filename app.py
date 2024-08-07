@@ -6,10 +6,10 @@ import plotly_express as px
 df=pd.read_csv("vehicles_us.csv")
 
 #creacion de boton histograma
-st.header("Analisis de Datos")
+st.header("Analisis de Datos de vehiculos usados en USA")
 boton_histograma=st.button("Crear Histograma")
 if boton_histograma:
-    st.write("Creacion de histograma de los datos de anuncio de ventas de coches") #mensaje
+    st.write("Creacion de histograma de los datos de ventas de vehiculos usados en USA") #mensaje
     #crear histograma
     fig=px.histogram(df, x="odometer")
     #mostrar grafico interactivo de Plotly
@@ -18,7 +18,7 @@ if boton_histograma:
 #creacion de boton dispersion
 boton_dispersion= st.button("Crear Grafico de Dispersion")
 if boton_dispersion:
-    st.write("Creacion de Grafico de Dispersion de los datos de anuncio de ventas de coches")
+    st.write("Creacion de Grafico de Dispersion de ventas de vehiculos usados en USA")
     #crear grafico
     fig=px.scatter(df, x="odometer")
     #mostrar el grafico interactivo
