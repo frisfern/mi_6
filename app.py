@@ -18,7 +18,7 @@ if boton_histograma:
 #creacion de boton dispersion
 boton_dispersion= st.button("Crear Grafico de Dispersion")
 if boton_dispersion:
-    st.writre("Creacion de Grafico de Dispersion de los datos de anuncio de ventas de coches")
+    st.write("Creacion de Grafico de Dispersion de los datos de anuncio de ventas de coches")
     #crear grafico
     fig=px.scatter(df, x="odometer")
     #mostrar el grafico interactivo
