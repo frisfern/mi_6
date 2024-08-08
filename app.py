@@ -20,6 +20,6 @@ boton_dispersion= st.button("Crear Grafico de Dispersion")
 if boton_dispersion:
     st.write("Gráfico de Dispersión del Kilometraje de Vehículos")
     #crear grafico
-    fig=px.scatter(df, x="odometer")
+    fig=px.scatter(df, x="odometer", y="price")
     #mostrar el grafico interactivo
     st.plotly_chart(fig, use_container_width=True)
